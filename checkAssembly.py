@@ -53,7 +53,7 @@ class CheckAssemblyCommand:
                 FreeCAD.Console.PrintError( message + '\n' )
                 response = QtGui.QMessageBox.critical(QtGui.qApp.activeWindow(), "Assembly Check", message + errorMsg)#, flags)
             else:
-                QtGui.QMessageBox.information(  QtGui.qApp.activeWindow(), "Assembly Check", "Passed:\n  - No overlap/interferance dectected." + errorMsg)
+                QtGui.QMessageBox.information(  QtGui.qApp.activeWindow(), "Assembly Check", "Passed:\n  - No overlap/interferance detected." + errorMsg)
     def GetResources(self): 
         msg = 'Check assembly for part overlap/interferance'
         return {
