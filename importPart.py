@@ -134,7 +134,7 @@ class ImportPartCommand:
         #    "FreeCAD Document (*.fcstd)"
         #    )
         dialog = QtGui.QFileDialog(
-            QtGui.qApp.activeWindow(),
+            QtGui.QApplication.activeWindow(),
             "Select FreeCAD document to import part from"
             )
         dialog.setNameFilter("Supported Formats (*.FCStd *.brep *.brp *.imp *.iges *.igs *.obj *.step *.stp);;All files (*.*)")
